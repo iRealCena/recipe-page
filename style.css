@@ -1,0 +1,111 @@
+@charset "utf-8";
+@font-face{
+	src: url("fonts/outfit/Outfit-VariableFont_wght.ttf") format('truetype');
+	font-family: Outfit;
+	font-weight: 100 900;
+}
+@font-face {
+  font-family: Young Serif;
+  src: url("fonts/young-serif/YoungSerif-Regular.ttf") format('truetype');
+  font-weight: 400;
+}
+body{
+	background-color: hsl(30, 54%, 90%);
+	font-size: 16px;
+	margin: 100px 0px 100px 0px;
+}
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.image{
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+.card{
+	box-sizing: border-box;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 15px;
+	padding: 30px;
+	width: 700px;
+}
+h1{
+	font-family: Young Serif;
+	font-size: 2.7em;
+	color: hsl(24, 5%, 18%);
+	font-weight: 400;
+}
+p, h3, li, tr{
+	font-family: Outfit;
+}
+.t1, li span{
+	color: hsl(30, 10%, 34%);
+}
+h3{
+	color: hsl(332, 51%, 32%);
+}
+.card2{
+	background-color: hsl(330, 100%, 98%);
+	padding: 5px 20px 5px 20px;
+	border-radius: 10px;
+}
+.l1{
+	color: hsl(332, 51%, 32%);
+	margin: 10px 30px 15px;
+}
+.t2b{
+	font-weight: bold;
+}
+.hd1{
+	font-size: 2em;
+	color: hsl(14, 45%, 36%);
+}
+.l2, .l3{
+	color: hsl(14, 45%, 36%);
+	margin: 10px 25px 15px;
+}
+.line{
+	margin: 40px 0px 20px 0px;
+}
+.l3{
+	color: hsl(14, 45%, 36%);
+	margin: 10px 25px 15px;
+	list-style-type: decimal;
+}
+.td1{
+	color:  hsl(14, 45%, 36%);
+	font-weight: bold;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+td{
+	padding: 10px;
+}
+tr:not(:last-child){
+	border-bottom: 1px solid hsl(30, 10%, 54%);
+}
+
+@media screen and (max-width: 700px){
+	body{
+		margin: 0px;
+		font-size: 1.01em;
+	}
+	.image{
+		height: auto;
+		border-radius: 0px;
+		width: 100%;
+}
+	.card{
+		padding: 0px;
+	}
+	.content{
+		padding: 20px;
+	}
+	h1{
+		font-size: 2.3em;
+	}
+}
